@@ -1,13 +1,30 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.HashSet;
+import java.util.Set;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+public class TrainConsistManagement {
+
+    public static void main(String[] args) {
+
+        // Welcome message
+        System.out.println("=====================================");
+        System.out.println("=== Train Consist Management App ===");
+        System.out.println("=====================================\n");
+
+        Set<String> bogieIds = new HashSet<>();
+
+        bogieIds.add("BG101");
+        bogieIds.add("BG102");
+        bogieIds.add("BG103");
+        bogieIds.add("BG101"); // duplicate
+        bogieIds.add("BG102"); // duplicate
+
+        // Display bogie IDs
+        System.out.println("Bogie IDs after insertion (duplicates ignored):");
+        System.out.println(bogieIds);
+
+        // Display total unique bogies
+        System.out.println("\nTotal unique bogies: " + bogieIds.size());
+
+        System.out.println("\nProgram execution continues...");
     }
 }
