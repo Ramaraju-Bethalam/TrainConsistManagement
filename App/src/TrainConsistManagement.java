@@ -15,6 +15,7 @@ public class TrainConsistManagement {
         bogieIds.add("BG101");
         bogieIds.add("BG102");
         bogieIds.add("BG103");
+        bogieIds.add("BG104");
         bogieIds.add("BG101"); // duplicate
         bogieIds.add("BG102"); // duplicate
 
