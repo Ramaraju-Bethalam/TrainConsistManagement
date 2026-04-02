@@ -5,6 +5,27 @@ public class TrainConsistManagement {
 
     public static void main(String[] args) {
 
+<<<<<<< feature/UC5
+        System.out.println("=====================================");
+        System.out.println("=== Train Consist Management App ===");
+        System.out.println("=====================================\n");
+
+        Set<String> trainFormation = new LinkedHashSet<>();
+
+        trainFormation.add("Engine");
+        trainFormation.add("Sleeper");
+        trainFormation.add("Cargo");
+        trainFormation.add("Guard");
+
+        trainFormation.add("Sleeper"); 
+
+        System.out.println("Final Train Formation (No duplicates, ordered):");
+        System.out.println(trainFormation);
+
+        System.out.println("\nTotal bogies: " + trainFormation.size());
+
+        System.out.println("\nProgram execution continues...");
+=======
         System.out.println("=======================================");
         System.out.println(" UC6 - Map Bogie to Capacity (HashMap) ");
         System.out.println("=======================================\n");
@@ -22,5 +43,6 @@ public class TrainConsistManagement {
         }
 
         System.out.println("\nUC6 bogie-capacity mapping completed...");
+>>>>>>> main
     }
 }
