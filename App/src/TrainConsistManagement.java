@@ -1,48 +1,13 @@
-import java.util.HashMap;
-import java.util.Map;
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+void main() {
+    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+    // to see how IntelliJ IDEA suggests fixing it.
+    IO.println(String.format("Hello and welcome!"));
 
-public class TrainConsistManagement {
-
-    public static void main(String[] args) {
-
-<<<<<<< feature/UC5
-        System.out.println("=====================================");
-        System.out.println("=== Train Consist Management App ===");
-        System.out.println("=====================================\n");
-
-        Set<String> trainFormation = new LinkedHashSet<>();
-
-        trainFormation.add("Engine");
-        trainFormation.add("Sleeper");
-        trainFormation.add("Cargo");
-        trainFormation.add("Guard");
-
-        trainFormation.add("Sleeper"); 
-
-        System.out.println("Final Train Formation (No duplicates, ordered):");
-        System.out.println(trainFormation);
-
-        System.out.println("\nTotal bogies: " + trainFormation.size());
-
-        System.out.println("\nProgram execution continues...");
-=======
-        System.out.println("=======================================");
-        System.out.println(" UC6 - Map Bogie to Capacity (HashMap) ");
-        System.out.println("=======================================\n");
-
-        Map<String, Integer> capacityMap = new HashMap<>();
-
-        capacityMap.put("First Class", 24);
-        capacityMap.put("Cargo", 120);
-        capacityMap.put("Sleeper", 72);
-        capacityMap.put("AC Chair", 56);
-
-        System.out.println("Bogie Capacity Details:\n");
-        for (Map.Entry<String, Integer> entry : capacityMap.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
-        }
-
-        System.out.println("\nUC6 bogie-capacity mapping completed...");
->>>>>>> main
+    for (int i = 1; i <= 5; i++) {
+        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+        IO.println("i = " + i);
     }
 }
